@@ -13,7 +13,8 @@
   在每天10，13，15点的时候自动启动，持续一到两小时左右，期间不定时调用api，模仿人为应用开发
   
 ### 步骤
-**如果想从AutoApiSecret直接升级**
+**如果想从AutoApiSecret项目直接升级**
+
   可以把本项目代码下载，然后把里面部分文件更新进AutoApiSecret
   * 把 update.py 上传到 AutoApiSecret
   
