@@ -49,7 +49,7 @@ AutoApi系列：AutoApi、AutoApiSecret、AutoApiSR
   
   * 把 .github/workflow/AutoupdateToken.yml 上传到 AutoApiSecret 的 .github/workflow/ 文件夹下
   
-  * 把 AutoApiSecret 的.github/workflow/autoapi.yml删除，再把本项目的 .github/workflow/AutoApi.yml 上传上去
+  * 把 AutoApiSecret 的.github/workflow/autoapi.yml删除，再把本项目的 .github/workflow/AutoApiSR.yml 上传上去
 
 **如果是以前从未接触AutoApi系列项目的**
 * 第一步，先大致浏览[原教程](https://blog.432100.xyz/index.php/archives/50/)，了解如何获取应用id、机密、refresh_token 3样东西，以方便接下来的操作。
