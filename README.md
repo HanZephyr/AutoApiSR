@@ -12,6 +12,8 @@
 
   在每天9，13，16点的时候自动启动（周六日休息），持续一到两小时左右，期间不定时调用api，模仿人为应用开发
   
+  (本项目运行完大概要一两小时，建议先弄AutoApiSecret看看Api是否全部调用成功，然后再把应用id、机密、token复制过来这边)
+  
 ### 步骤
 **如果想从AutoApiSecret项目直接升级**
 
@@ -23,7 +25,7 @@
   * 把 .github/workflow/AutoupdateToken.yml 上传到 AutoApiSecret 的 .github/workflow/ 文件夹下
   
   * 把 AutoApiSecret 的.github/workflow/autoapi.yml删除，再把本项目的 .github/workflow/AutoApi.yml 上传上去
-  
+
 **如果是以前从未接触AutoApi系列项目的**
 * 第一步，先大致浏览[原教程](https://blog.432100.xyz/index.php/archives/50/)，了解如何获取应用id、机密、refresh_token 3样东西，以方便接下来的操作。
 
