@@ -15,12 +15,14 @@
 ### 步骤
 **如果想从AutoApiSecret项目直接升级**
 
-  可以把本项目代码下载，然后把里面部分文件更新进AutoApiSecret
+  可以把本项目代码下载，然后把里面部分文件更新进AutoApiSecret:
+  * 把 AutoApiSecret 的 1.py 删除，再把本项目的1.py 上传上去
+  
   * 把 update.py 上传到 AutoApiSecret
   
-  * 把 .github/workflow/AutoupdateToken.yml 上传到 AutoApiSecret的.github/workflow/ 文件夹下
+  * 把 .github/workflow/AutoupdateToken.yml 上传到 AutoApiSecret 的 .github/workflow/ 文件夹下
   
-  * 把 AutoApiSecret的.github/workflow/autoapi.yml删除，再把本项目的.github/workflow/AutoApi.yml上传上去
+  * 把 AutoApiSecret 的.github/workflow/autoapi.yml删除，再把本项目的 .github/workflow/AutoApi.yml 上传上去
   
 **如果是以前从未接触AutoApi系列项目的**
 * 第一步，先大致浏览[原教程](https://blog.432100.xyz/index.php/archives/50/)，了解如何获取应用id、机密、refresh_token 3样东西，以方便接下来的操作。
