@@ -1,5 +1,5 @@
-#自动调用api保活，加密版
-name: Auto Api Secret
+#自动调用api保活，模仿人为开发版
+name: Auto Api SR
 
 on: 
   release:
