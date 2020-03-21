@@ -13,8 +13,31 @@
   在每天**9，13，16**点的时候自动启动（**周六日休息**），持续一到两小时左右，**期间不定时调用api**，模仿人为应用开发
   
   (本项目运行完一次大概要一两小时，建议先弄AutoApiSecret看看Api是否全部调用成功，然后再把应用id、机密、token复制过来这边)
-  
-### 步骤
+
+### 特别说明/Thanks ###
+* 原教程博主-黑幕（酷安id-Paran）：https://blog.432100.xyz/index.php/archives/50/
+* 普通版地址：https://github.com/wangziyingwen/AutoApi
+* 加密版地址：https://github.com/wangziyingwen/AutoApiSecret
+* 模仿人为应用开发版（包含升级步骤）：https://github.com/wangziyingwen/AutoApiSR
+* 更新日志：https://github.com/wangziyingwen/Autoapi-test
+* 网页获取refresh_token小工具（不建议使用）：https://github.com/wangziyingwen/GetAutoApiToken
+* 视频教程：（我操作很慢，自行倍速/快进）
+   * 在线/下载地址：https://kino-onemanager.herokuapp.com/Video/AutoApi%E6%95%99%E7%A8%8B.mp4?preview
+   * B站：https://www.bilibili.com/video/av95688306/
+           
+
+### 区别 ###
+   项目用的是公共仓库（开放代码），所有人都能看到你的代码内容。
+
+   所以你的应用id、机密、令牌都会显示出来，不安全。
+
+   加密版，我把应用id、机密都隐藏了，令牌因为需要实时更新，隐藏不了（我不会！），安全性会高很多！
+   
+   模仿人为应用开发版，顾名思义。
+   
+--------------------------------------------------------------
+
+### 步骤 ###
 **如果想从AutoApiSecret项目直接升级**
 
   可以把本项目代码下载，然后把里面部分文件更新进AutoApiSecret:
