@@ -1,4 +1,4 @@
-# AutoApiSecret
+# AutoApiSR
 
 # 置顶 #
 * 本项目是建立在[原教程](https://blog.432100.xyz/index.php/archives/50/)可以正确调用api的**假设**上的，核心是paran/黑幕大佬的py脚本。
@@ -8,27 +8,19 @@
 * 若理解并接受上述说明，请接着操作；**若否，请点击浏览器右上角 X 。**
 
 ### 项目说明 ###
-* 利用github action实现**定时自动调用api**，保持E5开发活跃。
-* **免费，不需要额外设备/服务器**，部署完不用管啦。
-* 加密版，隐藏应用id+机密，保护账号安全。
-
-### 特别说明/Thanks ###
-* 原教程博主-黑幕（酷安id-Paran）：https://blog.432100.xyz/index.php/archives/50/
-* 普通版地址：https://github.com/wangziyingwen/AutoApi
-* 加密版地址：https://github.com/wangziyingwen/AutoApiSecret
-* 更新日志：https://github.com/wangziyingwen/Autoapi-test
-* 网页获取refresh_token小工具（不建议使用）：https://github.com/wangziyingwen/GetAutoApiToken
-
-### 区别 ###
-   项目用的是公共仓库（开放代码），所有人都能看到你的代码内容。
-
-   所以你的应用id、机密、令牌都会显示出来，不安全。
-
-   加密版，我把应用id、机密都隐藏了，令牌因为需要实时更新，隐藏不了（我不会！），安全性会高很多！
-
---------------------------------------------------------------
-
-### 步骤 ###
+* 不定时调用
+  在每天10，13，15点的时候自动启动，持续一到两小时左右，期间不定时调用api，模仿人为应用开发
+  
+### 步骤
+**如果想从AutoApiSecret直接升级**
+  可以把本项目代码下载，然后把里面部分文件更新进AutoApiSecret
+  * 把 update.py 上传到 AutoApiSecret
+  
+  * 把 .github/workflow/AutoupdateToken.yml 上传到 AutoApiSecret的.github/workflow/ 文件夹下
+  
+  * 把 AutoApiSecret的.github/workflow/autoapi.yml删除，再把本项目的.github/workflow/AutoApi.yml上传上去
+  
+**如果是以前从未接触AutoApi系列项目的**
 * 第一步，先大致浏览[原教程](https://blog.432100.xyz/index.php/archives/50/)，了解如何获取应用id、机密、refresh_token 3样东西，以方便接下来的操作。
 
 * 第二步，登陆/新建github账号，回到本项目页面，点击右上角fork本项目的代码到你自己的账号，然后你账号下会出现一个一模一样的项目，接下来的操作均在你的这个项目下进行。
@@ -74,7 +66,7 @@
   
 * 第五步，点击右上角星星/star立马调用一次，再点击上面的Action就能看到每次的运行日志，看看运行状况
 
-（必需点进去Test Api看下，api有没有调用到位，有没有出错。外面的Auto Api打勾只能说明运行是正常的，我们还需要确认10个api调用成功了，就像图里的一样。如果少了几个api，就是注册应用的时候赋予api权限没弄好）
+（必需点进去Test Api看下，api有没有调用到位，有没有出错。外面的Auto Api打勾只能说明运行是正常的，我们还需要确认10个api调用成功了，就像图里的一样。如果少了几个api，要么是注册应用的时候赋予api权限没弄好；要么是没登录激活onedrive，登录激活一下）
 
   ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/日志.png)
 
@@ -82,7 +74,7 @@
 
   我设定的每6小时自动运行一次，每次调用3轮（点击右上角星星/star也可以立马调用一次），你们自行斟酌修改（我也不知道保持活跃要调用多少次、多久）：
 
-  * 定时自动启动修改地方：（在.github/workflow/autoapi.yml文件里，自行百度cron定时任务格式）
+  * 定时自动启动修改地方：（在.github/workflow/autoapi.yml文件里，自行百度cron定时任务格式，最短每5分钟一次）
    
   ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/定时.png)
    
@@ -123,3 +115,4 @@
   最后的最后，再次感谢黑幕/paran大佬
   
   ————wangziyingwen/酷安id-卷腿毛菌
+
